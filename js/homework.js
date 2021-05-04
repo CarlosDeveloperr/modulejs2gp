@@ -68,7 +68,7 @@
  */
 
 /**
- * 6:
+ * 7:
  * Pedir al usuario 2 numeros 
  * Imprimir en consola cual es el menor de los 2
  * Imprimir en consola cual es el mayor de los 2
