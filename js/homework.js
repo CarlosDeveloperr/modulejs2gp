@@ -2,6 +2,7 @@
  * Ejercicios
  */
 
+
 /**
  * 1:
  * Pedir al usuario estos 3 datos
@@ -15,17 +16,6 @@
 
 /**
  * 2:
- * Pedir al usuario estos 3 datos
- * - Nombre
- * - Peso actual
- * Calcular el peso que tendria esa persona en la luna
- * Imprimirlo en consola
- * ** Opcional -> Crear una función **
- */
-
-
-/**
- * 3:
  * Pedir al usuario la calificación de un examen ( 0 a 100)  por el prompt
  * Imprimir en consola las equivalencias en letra su calificación, es decir
  * -> si es mayor o igual a 90, imprimir "A"
@@ -38,7 +28,7 @@
 
 
 /**
- * 4:
+ * 3:
  * Pedir al usuario por prompt un numero entre 1 y 100
  * Comparar si ese numero es divisible entre 2, 3 u 11
  * Imprimir en consola un mensaje que indique de que numero(s) es múltiplo
@@ -50,7 +40,7 @@
 
 
 /**
- * 5:
+ * 4:
  * Pedir al usuario por prompt un numero entre 1 y 100
  * verificar si es un par o impar
  * imprimir en resultado en consola
@@ -59,7 +49,7 @@
  */
 
 /**
- * 6:
+ * 5:
  * Pedir al usuario el dia de la semana 
  * p.ej. lunes, martes, ...
  * Imprimir en consola el número del dia de la semana equivalente
@@ -68,7 +58,7 @@
  */
 
 /**
- * 7:
+ * 6:
  * Pedir al usuario 2 numeros 
  * Imprimir en consola cual es el menor de los 2
  * Imprimir en consola cual es el mayor de los 2
