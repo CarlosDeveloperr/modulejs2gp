@@ -101,16 +101,15 @@ console.log(stringReversed)
 // 	}
 // }
 
-
 // While
 let counter = 1 // inicio
 let fin = 10
 let table = 9 
 while(counter <= 10){ // fin
-	
 	console.log(`${table} x ${counter} =  ${table * counter}`)
 	counter += 1 // aumento / decremento
 }
+
 
 
 
