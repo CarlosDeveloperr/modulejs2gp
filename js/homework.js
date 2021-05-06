@@ -37,6 +37,11 @@
  * -> La oración "anita lava la tina" es un palindromo
  */
 
+let string = 'anita lava la tina'
+let normalString = string.split(' ').join('')
+let reverseString = normalString.split('').reverse().join('')
+normalString === reverseString ? console.log('palindromo') : console.log('No palindromo')
+
 /**
  * 5:
  * pedir el usuario un numero entre 1 y 10
@@ -56,3 +61,19 @@
  *
 
 */
+
+const numberPattern = window.prompt('')
+
+let limit = 5
+let char = ''
+for(let i = 1; i <= limit; i++){
+    char += '*'
+    console.log(char)
+    if(i == limit){
+        for(let i = limit - 1; i >= 1; i--){
+            console.log(char.substring(0, i))
+        }
+
+    }    
+}    
+
