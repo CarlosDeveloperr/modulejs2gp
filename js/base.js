@@ -14,7 +14,6 @@ for(i = 1; i <= 100; i++){
 }
 
 
-
  /**
   * While
   * Escribir un programa que le pida al usuario un numero
@@ -28,4 +27,29 @@ while(initialNumber >= 0){
     console.log(`el numero introducido fue ${initialNumber}`)
     initialNumber = parseInt(window.prompt('Dame otro numero'))
 }
+
+
+/**
+ * Dado los siguientes 2 strings
+ * 'smtp'
+ * 'aeiou'
+ * Imprimir en consola las siguientes combinaciones
+ * -> sa, se, si, so , su 
+ * -> ma, me, mi, mo , mu 
+ * -> ta, te, ti, to , tu 
+ * -> pa, pe, pi, po , pu
+ */
+
+let consonantStr = 'smtp'
+let vowelsStr = 'aeiou'
+
+for(let i = 0; i < consonantStr.length; i++) {
+    let strinToPrint = ''
+    for(let j = 0; j < vowelsStr.length; j++){
+        strinToPrint += `${consonantStr[i]}${vowelsStr[j]};`
+    }
+    console.log(strinToPrint)
+}
+
+
 
