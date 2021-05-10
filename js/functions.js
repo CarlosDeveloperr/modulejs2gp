@@ -1,79 +1,89 @@
+console.log('Funciones, parametros por defecto, funciones como parametro (callback)')
 
-console.log('Funciones')
-
-// definicion de la funcion
-// function getPI() {
-
-//     let dollar = 21
-//     if(dollar == 20){
-//         // termina la funcion y retorna
-//         return dollar
-//     }
-
-//     // termina la funcion y retorna
-//     return 30
-//     console.log('algo mas')
-// }
-
-// Mandar llamar la función
-
-// funciones con parametros
-// cocina facil
-function recetaSalsa(ingrediente1, ingrediente2) {
-    // proceso
-    let salsa = ingrediente1 + ' ' + ingrediente2
-    // resultado
-    return salsa
-}
-
-let bowl = recetaSalsa('Tomate','Chile')
-
-// function buySalt(cash) {
-//     if(cash != undefined){
-//         console.log('save cash'+ cash)
-//         console.log('Cambio'+ cash)
-//         return "salt"
-//     } else {
-//         return "Give me cash"
-//     }
-// }
+/**
+ * Convertidor de temperatura
+ * Generar una función, que reciba (grados, entrada, salída ) 
+ * Default es ºC a ºF
+ * p.ej. (100,c,f) -> 100 ºC a ºF -> Default
+ * p.ej. (100,f,c) -> 100 ºF a ºC
+ * C to F -> (celsius*9)/5 + 32
+ * F to C -> ((fahrenheit - 32)*5)/9
+ *
+ */
 
 
-// function transferencia(account, cash) {
-    
-//     console.log('get account = '+ account)
-//     console.log('get cash = '+ cash)
-//     //  proceso
-//     console.log('verificar saldo de cuenta')
 
-//     if('saldo >= cash'){
-//         console.log('Enviar a la cuenta', account)
-//         return 'succes'
-//     } 
-    
-//     return 'error'
-    
-// }
 
-function suma(val1, val2) {
-    return val1 + val2
-}
-function multi(val1, val2) {
-    return val1 * val2
-}
+/**
+ * Ejercicio
+ * Simular el funcionamiento de un cajero
+ * 
+ * considerar estas accciones
+ * 1. Retiro de efectivo
+ * 2. Depósito
+ * 3. Consulta de saldo
+ * 4. Traspasar a la cuenta 1234 $500
+ * 
+ * Datos iniciales
+ * Saldo 2000
+ * Consultas de saldo = 0
+ * Depositos = 0
+ * Retiros = 0
+ * 
+ * 
+ * Pasos a ejecutar
+ * 1. Depositar 2000
+ * 2. Retirar 450
+ * 3. Consultar saldo
+ * 4. Retirar 400
+ * 5. Consultar saldo
+ * 
+ */
 
-function getAddMulti(valor, valor2) {
-    let resultAdd = suma(valor, valor2)
-    let resultMulti = multi(valor, valor2)
-    console.log('suma: '+ resultAdd)
-    console.log('Multiplicación: '+ resultMulti)
-}
+
+
+/**
+ * funciones como expresion
+ * Ejemplo: let saludo = function() ...
+ */
+
+
+/**
+ * Ejercicio
+ * Cambiar las funciones de "funcionamiento de un cajero"
+ * a funciones
+ */
 
 
 
 
 
 
+/**
+ * Pasar como parametro una función
+ * CallbackSuccess, CallbackError
+ * 
+ */
+
+
+/**
+ * Ejercicio
+ * Pasar como parametro una función
+ * CallbackSuccess, CallbackError
+ * 
+ */
+
+
+
+/**
+ * funciones autoejecutadas
+ * 
+    ( function () {
+    let nombre = 'Victor'
+    return `Hola ${nombre}`
+    })()
+
+ */
 
 
 
