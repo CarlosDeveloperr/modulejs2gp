@@ -43,14 +43,14 @@ function celsiusToF(temp, initial = 'c', finish = 'f') {
  * Simular el funcionamiento de un cajero
  * 
  * considerar estas accciones
- * 1. Retiro de efectivo
- * 2. Depósito
- * 3. Consulta de saldo
- * 4. Traspasar a la cuenta 1234 $500
+ * 1. Retiro de efectivo (cantidad)
+ * 2. Depósito (cantidad)
+ * 3. Consulta de saldo () 
+ * 4. Traspasar (cuenta, cantidad)
  * 
  * Datos iniciales
- * Saldo 2000
- * Consultas de saldo = 0
+ * Saldo inicial: $2000
+ * Consultas de saldo = 2000
  * Depositos = 0
  * Retiros = 0
  * 
@@ -61,8 +61,49 @@ function celsiusToF(temp, initial = 'c', finish = 'f') {
  * 3. Consultar saldo
  * 4. Retirar 400
  * 5. Consultar saldo
- * 
+ * 6. Transferir 500 pesos a la cuenta 1234
  */
+
+let balance = 2000
+let countGetBalance = 0
+let countSetDeposits = 0
+let countWithdrawCash = 0
+
+function withdrawCash(amount) {
+   if(amount < balance){
+      balance =  balance - amount
+      countWithdrawCash++
+      console.log(`Toma tu dinero: $${amount}`)
+   } else {
+      console.warn('Saldo insuficiente!')
+   }
+}
+
+const getBalance = function() {
+   countGetBalance++
+   return `Tu saldo actual es de $${balance}`
+}
+
+function setDeposits(amount) {
+   if(amount > 0){
+      balance =  balance + amount
+      countSetDeposits++
+      return `Tu saldo ahora es de $${balance}`
+   } else {
+      console.warn('Inserte una cantidad mayor a 0')
+   }
+}
+
+function transferCash(account, amount){
+   if(amount <= balance) {
+      balance = balance - amount
+      countWithdrawCash++
+      console.log(`Dinero transferido a ${account} : $${amount}`)
+      console.log(`Tu saldo actual es de $${balance}`)
+   } else {
+      console.warn('Saldo insuficiente!, intenta con otra cantidad')
+   }
+}
 
 
 
@@ -72,10 +113,21 @@ function celsiusToF(temp, initial = 'c', finish = 'f') {
  */
 
 
+// function saludar(name) {
+//    console.log(`Hola ${name}`)
+// }
+
+const saludar = function (name) {
+   console.log(`Hola ${name}`)
+}
+
+// saludar('Jaime')
+
+
 /**
  * Ejercicio
  * Cambiar las funciones de "funcionamiento de un cajero"
- * a funciones
+ * a funciones como expresión
  */
 
 
@@ -88,6 +140,55 @@ function celsiusToF(temp, initial = 'c', finish = 'f') {
  * CallbackSuccess, CallbackError
  * 
  */
+
+const funcSuccess = function() {
+   console.log('Trasanccion exitosa xd')
+}
+const funcError = function() {
+   console.error('Ocurrio algun error')
+}
+
+
+const transferCashFunction = function(amount, funcionExito, funcionError ) {
+   if(amount <= 500 && amount > 0){
+      funcionExito()
+   } else {
+      funcionExito()
+   }
+}
+
+transferCashFunction(200, funcSuccess, funcError)
+
+
+// function name( par1, par2) {
+//    console.log(par1, par2)
+// }
+
+// let hi = 'hola'
+// let mundo = 'mundo'
+
+// name(hi, mundo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -108,6 +209,7 @@ function celsiusToF(temp, initial = 'c', finish = 'f') {
     })()
 
  */
+
 
 
 
