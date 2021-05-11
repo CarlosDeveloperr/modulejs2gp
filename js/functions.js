@@ -1,5 +1,16 @@
 console.log('Funciones, parametros por defecto, funciones como parametro (callback)')
 
+
+function myFunction(paramOne, paramTwo) {
+   paramOne = paramOne || 9
+   paramTwo = paramTwo || 10
+   console.log(paramOne, paramTwo)
+   // let suma = paramOne + paramTwo
+   // return suma
+}
+
+
+
 /**
  * Convertidor de temperatura
  * Generar una función, que reciba (grados, entrada, salída ) 
@@ -10,6 +21,19 @@ console.log('Funciones, parametros por defecto, funciones como parametro (callba
  * F to C -> ((fahrenheit - 32)*5)/9
  *
  */
+
+function celsiusToF(temp, initial = 'c', finish = 'f') {
+   return initial == "c" ? 
+      tempConverted = (temp * 9) / 5 + 32 :
+      tempConverted = ((temp - 32) * 5) / 9
+}
+// celsiusToF(100) -> c to f
+// celsiusToF(100,"f", "c") -> f to c
+
+
+
+
+
 
 
 
