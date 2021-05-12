@@ -157,7 +157,7 @@ const transferCashFunction = function(amount, funcionExito, funcionError ) {
    }
 }
 
-transferCashFunction(200, funcSuccess, funcError)
+// transferCashFunction(200, funcSuccess, funcError)
 
 
 // function name( par1, par2) {
@@ -209,6 +209,37 @@ transferCashFunction(200, funcSuccess, funcError)
     })()
 
  */
+
+
+
+// funciones como expresion
+let age = function() {
+   console.log('Some')
+}
+
+
+
+
+// funciones como parametros
+let funcionDeExito = function(){
+   return 'Transaccion exitosa'
+}
+
+let funcionDeError = function(){
+   return `Transaccion fallida`
+}
+let depositar = function(amount, functionSuccess, functionError) {
+   if(amount <= 5000){
+      let response = functionSuccess()
+      return response
+   } else {
+      let response = functionError()
+      return response
+   }
+}
+
+// let response = depositar(5600, funcionDeExito,funcionDeError)
+// console.log(response)
 
 
 
