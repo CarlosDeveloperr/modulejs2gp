@@ -1,177 +1,80 @@
-console.log('Metodos de array')
-
-
-let arrFor = [1,2,3,4]
-
-// Inicio ok
-// condicion de parada (fin) 
-// counter -> aumento / decremento
-// for(let i = 0; i < arrFor.length ; i++) {
-//    console.log(arrFor[i]) 
-// }
-// arrFor.forEach(function() {
-//    // sentencias 
-// })
-
-arrFor.forEach((currentValue) => {
-    console.log(currentValue)
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Ejercicio 1 .forEach()
-// Dado un array con solo números
-// obtener el valor mas alto
-// input: [1,4,3,2,5]
-// output: -> 5
-
-const mostBiggest  = arr => {
-
-    // ordenar de mayor a menor arr = [5,4,3,2,1]
-    // retornar arr[1] -> 4
-
-    let largest = 0
-    arr.forEach(element => {
-        if (largest < element ) {
-            largest = element
-        }
-    })
-    return largest
-}
-
-
-// ejercicio .forEach() o .map() o for()
-// función
-// convertir todos los elementos numericos de un array
-// a strings
-// input: [1,2,3,4,5]
-// output -> ['1,','2','3','4','5']
-
-const numberToStringMap = arr => arr.map( element => element.toString() )
-const numberToStringFe = arr => {
-    let arrStr = []
-    arr.forEach( element => {
-        arrStr.push( element.toString() ) 
-    })
-    return arrStr
-} 
-
-
-// funcion que dados 2 parametros
-// p1 = año de inicio
-// p2 = año de fin
-// y devuelva un array con los años que son bisiestos
-// que se encuentran en ese rango
-// [1990, 2000, 2001, 2020]
-// -> [2000,2020]
-
-const convertLeapYear = (startYear, endYear) => {
-    let filteredYears = []
-    for(let year = startYear; year <= endYear; year++){
-        if(
-            (year % 4 === 0 && year % 100 !== 0) || 
-            (year % 100 === 0 && year % 400 === 0)
-        ){
-            filteredYears.push(year)
-        }
-    }
-    // return arr.filter(year => {
-    //     return (year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)
-    // })
-
-    return filteredYears 
-}
-
-
-// arrFor.filter()
-// 
-
-// operador ternario
-// arrow functions
-/*
-
-function filtrarPares (arrayAFiltrar) {
-    let arrayfilter = []
-    arrayfilter = arrayAFiltrar.filter( function (currenValue) {
-        if ( currenValue % 2 !== 0 ) {
-            return currenValue
-        }
-    })
-    return arrayfilter
-}
-
-const filtrarPares = (arrayAFiltrar) => {
-    return  arrayAFiltrar.filter( (currenValue) => {
-        if ( currenValue % 2 !== 0 ) {
-            return currenValue
-        }
-    })
-}
-
-const filtrarPares = arr => arr.filter( () => {
-    if ( currenValue % 2 !== 0 ) {
-        return currenValue
-    }
-})
-
-const filtrarPares = arr => arr.filter( cv => cv % 2 !== 0 ? cv : '' )
-*/
-// const filtrarPares = arr => arr.filter( cv => cv % 2 !== 0 && cv > 2 )
-// let arrayTofilter = [1,2,3,4,5] 
-// let responseFiltrarPares = filtrarPares(arrayTofilter)
-// console.log(responseFiltrarPares)
-
-
-let arrStrAndNumbers = [1, "2", 3, "4", 'otro', 9, [1,2] ]
-/*
-function filterStrings(arr) {
-    return arr.filter(function (currentValue) {
-        if(typeof currentValue === "number") {
-            return currentValue
-        }
-    })
-}
-
-
-const filterStrings = arr => { arr.filter(currentValue => {
-        if(typeof currentValue === "number") {
-            return currentValue
-        }
-    })
-}
-
-const filterStrings = arr => { arr.filter(currentValue => {
-    typeof currentValue === "number" ? currentValue : ''
-})
-
-*/
-
-const filterStrings = arr =>  arr.filter( currentValue  =>  typeof currentValue === "number" )
-
-
-
+console.log('Metodos de array: map y reduce')
 
 // arrFor.map()
+// Ejercicio 1:
+// funcion que dado un array
+// genere un nuevo array con los mismos numeros multiplicados por 2
+function doubleNumbers(arr) {
+    // sentences
+}
+console.log(doubleNumbers([2, 5, 100]));
+// [4, 10, 200]
+
+
+
+// funcion que dado un array
+// genere un nuevo array con los mismos numeros como strings
+function stringItUp(arr) {
+    // sentences
+}
+console.log(stringItUp([2, 5, 100]));
+// ["2", "5", "100"]
+
+
+
+function capitalizeNames(arr) {
+    // sentences
+}
+console.log(capitalizeNames(["jorge", "antonio", "juan", "victor"]))
+// ["Jorge", "Antonio", "Juan", "Victor"]
+
+
+// Dados 2 arrays
+// array de nombres
+// array de apellidos
+// Crear una funcion que reciba los 2 arrays, 
+// y retorne un array con los nombres completos
+
+function joinNames(arrNames, arrSurnames) {
+    // sentences
+}
+console.log( joinNames( ["jorge", "luis"], ['camarillo', 'cristobal'] ) )
+// ["jorge camarillo ", "luis cristobal"]
+
+
+
+
+
+
 
 // arrFor.reduce()
+function totalAverage(arr) {
+    // sentences
+}
+console.log(totalAverage([1, 2, 3]))
+// 5
+
+
+
+function stringConcat(arr) {
+    // your code here 
+}
+console.log(stringConcat([1, 2, 3])); // "123"
+
+
+
+function totalShoppingCart(arr) {
+    // your code here 
+}
+console.log(totalShoppingCart( [ ["Reloj", 500] , ["Reloj", 500] , ["Reloj", 500] ] ) )
+// 1500
+
+
+function totalVoters(arr) {
+    // your code here 
+}
+console.log(totalVoters( [ ["jorge", false] , ["luis", true] , ["Victor", false] ] ) )
+// 1
+
+
+
