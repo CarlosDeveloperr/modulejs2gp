@@ -34,7 +34,7 @@ let responseFiveCharacters = fiveCharactersOnly(["dog", "wolf", "family", "eaten
 }
 
 // test
-let responseFiveCharacters = twoNamesKoders(["Antonio", "Victor Yair", "Luis Carlos", "Victor", "José Omar"])
+let responseTwoNamesKoders = twoNamesKoders(["Antonio", "Victor Yair", "Luis Carlos", "Victor", "José Omar"])
 // ["Victor Yair", "Luis Carlos", "José Omar"]
 
 
