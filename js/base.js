@@ -13,9 +13,9 @@ let arrFor = [1,2,3,4]
 //    // sentencias 
 // })
 
-arrFor.forEach((currentValue) => {
-    console.log(currentValue)
-})
+// arrFor.forEach((currentValue) => {
+//     console.log(currentValue)
+// })
 
 
 
@@ -172,6 +172,15 @@ const filterStrings = arr =>  arr.filter( currentValue  =>  typeof currentValue 
 
 
 
-// arrFor.map()
 
-// arrFor.reduce()
+// console.log(this)
+
+// const showThis = (arr, arr2) => {
+//     arr.forEach(function(value, index, arr) {
+//         console.log(this)
+//     }, arr2)
+// }
+
+// let arrThis = [1,2,3,4]
+// let arrThis2 = [1,2]
+// showThis(arrThis, arrThis2)
