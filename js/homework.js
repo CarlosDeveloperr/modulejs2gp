@@ -1,89 +1,79 @@
 
-/**
- * 
- * Ejercicio 1
- 
-Dado el array [ ["jorge", false] , ["luis", true] , ["Victor", false] ] 
-Calcular el numero de personas que si votaron
-Output -> 1
-Nota: las personas que si votaron tiene true
-
-*/
-
-const totalVoters = (arr) => {
-    // your code here
-}
-
-//console.log(totalVoters( [ ["jorge", false] , ["luis", true] , ["Victor", false] ] ) )
-// -> 1
-
 
 /**
- * 
- * Ejercicio 2
+ * Teniendo como base este array de objetos
  
-    Dado un array con pedidos de un restaurant
-    la estructura por cada pedido es 
-    ['entrada','principal','postre','precio'],
-
-    let pedidos = [
-        ['ensalada de pepinos','paella','platano', 100'],
-        ['ensalada de tomates','pescado','helado', 120],
-        ['ensalada simple','paella','yogurt', 80],
-        ['ensalada simple','enchiladas','yogurt', 80],
-        ['ensalada cesar','salmón','platano', 100],
-    ]
-
-    Funcion que devuelve el total de pedidos que tienen como plato principal "paella"
-    Funcion que devuelve los pedidos que tienen como postre "platano" o "helado" 
-    Funcion que devuelve los pedidos que tengen un precio superior a 90 
-    Funcion que devuelve los pedidos que tengen un precio superior a 90 
-
-*/
-
-let pedidos = [
-    ['ensalada de pepinos','paella','platano', 100],
-    ['ensalada de tomates','pescado','helado', 120],
-    ['ensalada simple','paella','yogurt', 80],
-    ['ensalada simple','enchiladas','yogurt', 80],
-    ['ensalada cesar','salmón','platano', 100],
+let library = [ 
+    {
+        author: 'Bill Gates',
+        title: 'The Road Ahead',
+        readingStatus: true
+    },
+    {
+        author: 'Steve Jobs',
+        title: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        author: 'Suzanne Collins',
+        title:  'Mockingjay: The Final Book of The Hunger Games', 
+        readingStatus: false
+    }
 ]
-
-
-
-
-
-
+ * Crear las funciones que :
+ * Ordene el array de objetos de acuerdo al titulo
+ * Ordene el array de objetos de acuerdo al autor
+ * Ordene el array de objetos de acuerdo al "readingStatus"
+ * Filtre los libros que estan ocupados
+ * 
+ */ 
 
 
 /**
- * Ejercicio 3:
- * Estudiar el tema de Objetos y métodos de Objetos
+ * Dado un string
+ * crear una funcion que sustitya cada caracter del string
+ * con la letra siguiente del abecedario
+ 
+const moveCharsForward = (str) =>{
+    // code here
+}  
+
+console.log(moveCharsForward('abcde'))
+// -> 'bcdef'
+
+*/
+
+/**
+ * Dado un array con objetos que tienen la propiedad de fecha de nacimiento
+ * convertir las fechas de formato yyyy/mm/dd
+ * al formato dd/mm/yyyy
+[
+    {
+        name:'Jorge',
+        birthdate: '1991/05/12'
+    },
+    {
+        name:'luis',
+        birthdate: '1991/02/12'
+    },
+    {
+        name:'mario',
+        birthdate: '1991/04/12'
+    },
+    {
+        name:'victor',
+        birthdate: '1991/09/12'
+    }
+]
+const convertBirthdates = (arr) =>{
+    // code here
+}  
+
+console.log(moveCharsForward( [{ name:'Jorge', birthdate: '1991-0/05/12' }] ))
+// -> [{ name:'Jorge', birthdate: '05/12/1991' }, ...]
+
  */
 
 
-
-// let koder2 = new Object()
-// console.log(koder2)
-
-// koder2.name = 'rose'
-// koder2.lastName = 'ortega'
-// koder2.gender = 'F'
-// koder2.age = 20
-// koder2.getFullName = function () {
-//     return `${this.name} ${this.lastName}`
-// }
-// console.log(koder2)
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
