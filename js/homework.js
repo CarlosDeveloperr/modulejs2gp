@@ -41,7 +41,49 @@ const totalVoters = (arr) => {
 
 */
 
+let pedidos = [
+    ['ensalada de pepinos','paella','platano', 100],
+    ['ensalada de tomates','pescado','helado', 120],
+    ['ensalada simple','paella','yogurt', 80],
+    ['ensalada simple','enchiladas','yogurt', 80],
+    ['ensalada cesar','salmón','platano', 100],
+]
+
+
+
+
+
+
+
+
 /**
  * Ejercicio 3:
  * Estudiar el tema de Objetos y métodos de Objetos
  */
+
+
+
+// let koder2 = new Object()
+// console.log(koder2)
+
+// koder2.name = 'rose'
+// koder2.lastName = 'ortega'
+// koder2.gender = 'F'
+// koder2.age = 20
+// koder2.getFullName = function () {
+//     return `${this.name} ${this.lastName}`
+// }
+// console.log(koder2)
+
+
+
+
+
+
+
+
+
+
+
+
+
